@@ -1,0 +1,12 @@
+spring:
+  application:
+    name : Citronix
+  datasource:
+    username: admin
+    url: jdbc:postgresql://localhost:5432/citron
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    liquibase:
+      change-log: classpath:db/master.yml
+    jpa:
+      database: postgresql
